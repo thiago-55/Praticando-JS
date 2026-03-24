@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão curtir</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <button id="botao">Curtir</button>
+<p id="status">👍 não curtido</p>
+
+<script>
+   
+   const botao = document.getElementById("botao");
+    const statusTexto = document.getElementById("status");
+
+    
+    let isCurtido = false;
+
+  
+    botao.addEventListener("click", function () {
+        
+        isCurtido = !isCurtido;
+
+        
+        if (isCurtido) {
+            statusTexto.innerText = "❤️ curtido";
+        } else {
+            statusTexto.innerText = "👍 não curtido";
+        }
+    });
+</script>
+</body> 
+</html>
