@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Produtos Mockados</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Consulta de Estoque</h1>
+        
+        <div class="search-box">
+            <input type="text" id="inputCodigo" placeholder="Digite o código (ex: 101, 102)">
+            <button id="btnBuscar">Buscar</button>
+            <button id="btnLimpar">Limpar</button>
+        </div>
+
+        <div id="mensagemErro" class="erro hidden"></div>
+
+        <div id="resultado" class="card hidden">
+            <img id="prodImagem" src="" alt="Imagem do produto">
+            <div class="info">
+                <h2 id="prodNome">Nome do Produto</h2>
+                <p><strong>Preço:</strong> R$ <span id="prodPreco">0,00</span></p>
+                <p><strong>Categoria:</strong> <span id="prodCategoria">-</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
