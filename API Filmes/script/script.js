@@ -2,7 +2,7 @@
 const campoBusca = document.getElementById("campo-busca");
 const listaFilmes = document.getElementById("lista-filmes");
 
-const API_KEY = "b605a85583ac4057349ab91c8f72c575";
+const API_KEY = "Digite o id";
 
 const URL_BASE = "https://api.themoviedb.org/3";
 const URL_IMAGEM = "https://image.tmdb.org/t/p/w500";
